@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Beats</title>
+    <!-------Ligando ao CSS-------->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="checkout">
+    <!-----main------>
+    <div class="main">
+        <header>
+            <!-----nav------>
+            <div class="nav container">
+                <!-----logo------>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+        </header>
+    <h1>Checkout</h1>
+        <form action="">
+        <div class="row">
+          <div class="col-50">
+            <h3>Preencha os campos</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+            <input type="text" id="nomeCompleto" placeholder="Gabriel V. Herculano">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" placeholder="gabriel@exemplo.com">
+            <label for="adr"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Endereço</label>
+            <input type="text" id="endereco" placeholder="N° 542, Boa Viagem">
+            <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <input type="text" id="cidade" placeholder="Recife">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Estado</label>
+                <input type="text" id="estado" placeholder="PE">
+              </div>
+              <div class="col-50">
+                <label for="zip">CEP</label>
+                <input type="text" id="cep" placeholder="34420-310">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Pagamento</h3>
+            <label for="fname">Cartões Aceitos</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color: #1434CB;"></i>
+              <i class="fa fa-cc-mastercard" style="color: #FF5F00;"></i>
+              <i class="fa fa-cc-paypal" style="color: #003087;"></i>
+            </div>
+            <label for="cname">Nome no Cartão</label>
+            <input type="text" id="nomeCartao" placeholder="Gabriel Victor">
+            <label for="ccnum">Número do Cartão</label>
+            <input type="text" id="numeroCartao" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Mês/Vencimento</label>
+            <input type="text" id="mesVencimento" placeholder="Setembro">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Ano/Vencimento</label>
+                <input type="text" id="anoVencimento" placeholder="2023">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn-checkout" type="submit" id="finalizarCompraButton">Finalizar Compra</button>
+      </form>
+    <!--Footer-->
+        <section class="footer container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <div class="footer-box">
+                <h2>Produtos</h2>
+                <a href="index.html">Headphones</a>
+            </div>
+            <div class="footer-box">
+                <h2>Ajuda</h2>
+                <a href="#">Chat de Suporte</a>
+            </div>
+            <div class="footer-box">
+                <h2>social</h2>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+            <script src="checkout-script.js"></script>
+        </section>
+</body>
+</html>

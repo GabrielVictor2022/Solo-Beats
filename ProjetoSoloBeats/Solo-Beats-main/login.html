@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="form-wrapper">
+            <img src="img/home.png" class="img-left">
+            <img src="img/buds.png" class="img-right">
+            <div class="form-wrapper-bg"></div>
+            <div class="form-wrapper-left">
+            <h1>Criar Conta</h1>
+            <form class="form-signup">
+                <div class="input-group">
+                    <input type="text" id="nome" placeholder="Nome de Usuário" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button class="form-btn" type="button" id="criarContaButton">Criar Conta</button>
+            </form>
+            <a href="#" class="signin-link">Entrar</a>
+            </div>
+            <div class="form-wrapper-right">
+                <h1>Entrar</h1>
+                <form class="form-signin-link">
+                    <div class="input-group">
+                        <input type="text" id="NomeLogin" placeholder="Nome de Usuário" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="SenhaLogin" placeholder="Senha" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button class="form-btn" type="button" id="iniciarSessaoButton">Iniciar Sessão</button>
+                </form>
+                <a href="#" class="signup-link">Criar Conta</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

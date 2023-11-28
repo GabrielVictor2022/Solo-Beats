@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Beats</title>
+    <!-------Ligando ao CSS-------->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-----main------>
+    <div class="main">
+        <header>
+            <!-----nav------>
+            <div class="nav container">
+                <!-----logo------>
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <!-----icone menu------>
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <!-----lista nav------>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specs">Specs</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#buds">Buds</a></li>
+                    <!--Login-->
+                    <li class="user-icon-menu">
+                        <div class="user-icon" id="user-icon">
+                            <i class="fas fa-user"></i>
+                            <ul class="user-menu">
+                                <li><a href="login.html" id="login-option">Entrar</a></li>
+                                <li><a href="#" id="logout-option">Sair</a></li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-----home------>
+        <section class="home" id="home">
+            <!-----conteudo da home------>
+            <div class="home-content container">
+                <div class="home-img">
+                    <img src="img/home.png" alt="">
+                </div>
+                <!-----texto home------>
+                <div class="home-text">
+                    <h1>Lançamento<br>Beats Solo 3</h1>
+                    <p>Beats Studio 3 um fone wireless over-ear que entrega um som especial, enquanto bloqueia os barulhos externos com a Tecnologia de Cancelamento de Ruído.
+                    </p>
+                    <a href="#" class="btn">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span class="add-to-cart" onclick="addToCart('Beats - Preto',  349.00, 'img/home.png')">Adicionar ao Carrinho</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-----especificações------>
+        <section class="specs" id="specs">
+            <h1 class="heading">Specs</h1>
+            <!-----conteudo da especificação------>
+            <div class="specs-container container">
+                <div class="specs-details">
+                    <div class="box">
+                        <i class='bx bxs-battery-charging'></i>
+                        <h3>Até 22 horas de duração de bateria</h3>
+                        <p>O longo termo de conforto é alcançado pela duração de 22 horas da bateria, e 40 horas de playback quando o Cancelamento de Ruído for desligado.</p>
+                    </div>
+                    <div class="box">
+                        <i class='bx bx-headphone'></i>
+                        <h3>Bloqueia o Ruído Externo</h3>
+                        <p>O cancelamento de ruído identifica continuamente sons externos para bloquear a resposta ao ajuste individual e a reprodução de música</p>
+                    </div>
+                </div>
+                <div class="specs-img">
+                    <img src="img/specs.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="cart-container">
+            <div class="cart">
+            <button class="close-cart" onclick="closeCart()">Fechar Carrinho</button>
+            <h2>Carrinho de Compras</h2>
+            <ul class="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+                <div class="total-price">Total: R$0.00</div>
+            </ul>
+            <button class="checkout-button" onclick="checkoutCart()">Checkout</button>
+            </div>
+        </div>
+        <!-----Compra------>
+        <section class="shop" id="shop">
+            <!-----heading------>
+            <h2 class="heading">Shop Now</h2>
+            <!---shop content---->
+            <div class="shop-container container">
+                <!--Box 1-->
+                <div class="box">
+                    <img src="img/shop1.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - Purple', 349.00, 'img/shop1.png')"></i>
+                </div>
+                <!--Box 2-->
+                <div class="box">
+                    <img src="img/shop2.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - Pink', 349.00, 'img/shop2.png')"></i>
+                </div>
+                <!--Box 3-->
+                <div class="box">
+                    <img src="img/shop3.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - Golden',  349.00, 'img/shop3.png')"></i>
+                </div>
+                <!--Box 4-->
+                <div class="box">
+                    <img src="img/shop4.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - Red',  349.00, 'img/shop4.png')"></i>
+                </div>
+                <!--Box 5-->
+                <div class="box">
+                    <img src="img/shop5.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - White',  349.00, 'img/shop5.png')"></i>
+                </div>
+                <!--Box 6-->
+                <div class="box">
+                    <img src="img/shop6.png" alt="">
+                    <h3>Beats Solo</h3>
+                    <span>$349</span>
+                    <i class='bx bx-shopping-bag' class="add-to-cart" onclick="addToCart('Beats - Blue',  349.00, 'img/shop6.png')"></i>
+                </div>
+            </div>
+        </section>
+        <!--Fone-->
+        <section class="buds" id="buds">
+            <div class="buds-container container">
+                <div class="buds-text">
+                    <h2>Beats Solo 3</h2>
+                    <span>$349</span>
+                    <p>Pareamento One-Touch para IOS e Android</p>
+                    <a href="#" class="btn">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span>Compre Agora</span>
+                    </a>
+                </div>
+                <!--Imagem-->
+                <div class="buds-img">
+                    <img src="img/home.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <section class="footer container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="footer-box">
+                <h2>Produtos</h2>
+                <a href="#">Headphones</a>
+            </div>
+            <div class="footer-box">
+                <h2>Ajuda</h2>
+                <a href="#">Chat de Suporte</a>
+            </div>
+            <div class="footer-box">
+                <h2>social</h2>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&#169; Buds All Rights Reserved.</p>
+        </div>
+    </div>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--JavaScript-->
+    <script src="main.js"></script>
+</body>
+</html>
+
